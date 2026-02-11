@@ -11,4 +11,5 @@ export default defineConfig({
       "@": path.resolve(__dirname, "src")
     }
   },
+  base: "/val-0o809127312i3823"
 })
