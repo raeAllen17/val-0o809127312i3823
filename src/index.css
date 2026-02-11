@@ -1,0 +1,75 @@
+@import url("https://fonts.googleapis.com/css2?family=Lobster&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Montserrat", system-ui, sans-serif;
+  --font-display: "Lobster", cursive;
+  --color-foreground: hsl(var(--foreground));
+  --color-accent: hsl(var(--accent));
+  --color-accent-hover: hsl(var(--accent-hover));
+}
+
+@layer base {
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+
+  :root {
+    --foreground: 220 13% 91%;
+    --accent: 217 91% 60%;
+    --accent-hover: 217 91% 55%;
+  }
+}
+
+@layer components {
+  h1 {
+    @apply text-foreground font-bold;
+    font-size: clamp(32px, 2vw, 64px);
+  }
+
+  h3 {
+    @apply text-foreground font-medium;
+  }
+}
+
+@layer utilities {
+  .btn-primary {
+    @apply px-5 py-2 rounded font-bold bg-accent text-white border-accent border-1 hover:bg-accent-hover
+     cursor-pointer;
+  }
+
+  .btn-secondary {
+    @apply border-0 px-5 py-2 rounded font-bold border-accent border-1 text-white hover:bg-accent-hover
+     cursor-pointer;
+  }
+
+  .star {
+    @apply absolute bg-white rounded-full opacity-20;
+    animation: twinkle 3s ease-in-out infinite;
+  }
+
+  .content-wrapper {
+    @apply px-5 w-full md:w-3xl md:px-0;
+  }
+
+  .content-center {
+    @apply flex flex-col items-center justify-center h-full;
+  }
+
+  .instax {
+    @apply bg-foreground rounded px-4 py-4 pb-20 ;
+  }
+}
+
+@keyframes twinkle {
+  0%,
+  100% {
+    opacity: 0.2;
+    transform: scale(1);
+  }
+
+  50% {
+    opacity: 1;
+    transform: scale(1.4);
+  }
+}
