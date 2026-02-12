@@ -30,7 +30,7 @@ export const NoPage = () => {
 
             {timeLeft === 0 && (
                 <div className="flex flex-col items-center gap-2">
-                    <img src="/atomic-cat.jpg" alt="" className="size-100" />
+                    <img src="https://res.cloudinary.com/di1otqhjw/image/upload/v1770870591/atomic-cat_wqfjux.jpg" alt="" className="size-100" />
                     <h1>KA-BOOOM!!!</h1>
                     <h3>Want to change your mind?</h3>
 

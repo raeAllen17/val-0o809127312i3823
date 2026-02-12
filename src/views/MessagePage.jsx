@@ -40,7 +40,7 @@ export const MessagePage = () => {
 
                     <br />
 
-                    <span className="text-accent"><a href="/">Allen</a></span>
+                    <span className="text-accent"><a href="/val-0o809127312i3823">Allen</a></span>
                 </h3>
             </div>
         </div>

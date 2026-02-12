@@ -13,24 +13,28 @@ export const router = createBrowserRouter([
         element: <HomePage />,
         children: [
             {
-                index:true,
+                index: true,
                 element: <InvitationPage />
             },
             {
-                path: "/she-answered-no",
+                path: "she-answered-no",
                 element: <NoPage />
             }, {
-                path: "/she-answered-yes",
+                path: "she-answered-yes",
                 element: <YesPage />
             },
             {
-                path:"/our-images",
+                path: "our-images",
                 element: <ImagesShow />
             },
             {
-                path: "/my-message",
+                path: "my-message",
                 element: <MessagePage />
             }
         ]
     },
-])
+],
+    {
+        basename: "/val-0o809127312i3823"
+    }
+)
